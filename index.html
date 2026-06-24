@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untuk Kamu</title>
+    <meta
+      name="description"
+      content="Sebuah halaman proposal romantis yang hangat, lembut, dan penuh animasi."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+    <canvas id="petals" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Kembali ke awal">
+        <span class="brand-mark">L</span>
+        <span>Love Proposal</span>
+      </a>
+      <nav aria-label="Navigasi utama">
+        <a href="#story">Cerita</a>
+        <a href="#reasons">Alasan</a>
+        <a href="#question">Jawaban</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img
+          class="hero-image"
+          src="assets/proposal-hero.png"
+          alt="Suasana lamaran romantis dengan kotak cincin, cahaya lilin, dan taman senja."
+        >
+        <div class="hero-shade"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Sebuah halaman kecil untuk hati yang besar</p>
+          <h1>Will you marry me?</h1>
+          <p class="hero-copy">
+            Dari semua tempat yang pernah aku tuju, pulang terbaik selalu terasa
+            seperti menemukan kamu.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#question">Aku siap jawab</a>
+            <a class="button ghost" href="#story">Baca dulu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro reveal" aria-labelledby="intro-title">
+        <p class="script">Dear you,</p>
+        <h2 id="intro-title">Kalau cinta punya bentuk, mungkin ia sesederhana hari-hari bersamamu.</h2>
+        <p>
+          Website ini bukan sekadar halaman cantik. Ini tempat kecil untuk
+          menyimpan semua hal yang susah aku ucapkan sekaligus: terima kasih,
+          aku memilih kamu, dan aku ingin terus memilihmu.
+        </p>
+      </section>
+
+      <section class="section story" id="story" aria-labelledby="story-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Our little forever</p>
+          <h2 id="story-title">Cerita kita</h2>
+        </div>
+        <div class="timeline">
+          <article class="moment reveal">
+            <span class="moment-number">01</span>
+            <h3>Pertama kali</h3>
+            <p>
+              Ada percakapan yang terasa biasa, lalu pelan-pelan menjadi alasan
+              kenapa hari berikutnya ingin cepat datang.
+            </p>
+          </article>
+          <article class="moment reveal">
+            <span class="moment-number">02</span>
+            <h3>Semakin dekat</h3>
+            <p>
+              Kita belajar bahwa bahagia tidak selalu ramai. Kadang ia hadir di
+              kabar singkat, tawa kecil, dan tangan yang tidak melepas.
+            </p>
+          </article>
+          <article class="moment reveal">
+            <span class="moment-number">03</span>
+            <h3>Hari ini</h3>
+            <p>
+              Aku sampai pada satu kalimat yang paling jujur: aku ingin
+              membangun rumah, mimpi, dan masa depan bersamamu.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reasons" id="reasons" aria-labelledby="reasons-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Every reason is you</p>
+          <h2 id="reasons-title">Kenapa kamu?</h2>
+        </div>
+        <div class="reason-grid">
+          <article class="reason reveal">
+            <span>01</span>
+            <h3>Kamu membuat sederhana terasa berharga.</h3>
+          </article>
+          <article class="reason reveal">
+            <span>02</span>
+            <h3>Kamu mengajarkan aku pulang tanpa perlu alamat.</h3>
+          </article>
+          <article class="reason reveal">
+            <span>03</span>
+            <h3>Kamu adalah doa yang pelan-pelan menjadi nyata.</h3>
+          </article>
+          <article class="reason reveal">
+            <span>04</span>
+            <h3>Kamu membuat masa depan terasa layak diperjuangkan.</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section question" id="question" aria-labelledby="question-title">
+        <div class="proposal-box reveal">
+          <p class="script">So, my love...</p>
+          <h2 id="question-title">Maukah kamu menikah denganku?</h2>
+          <p>
+            Aku tidak menjanjikan hidup yang selalu mudah. Aku menjanjikan hati
+            yang tetap memilihmu, bahkan saat hari sedang tidak indah.
+          </p>
+          <div class="answer-actions" aria-label="Pilihan jawaban">
+            <button class="answer yes" type="button">Yes, I do</button>
+            <button class="answer maybe" type="button">Aku terharu</button>
+          </div>
+          <p class="answer-note" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with love, patience, and one very brave question.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

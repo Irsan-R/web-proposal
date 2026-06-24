@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kenangan Kita</title>
+    <meta
+      name="description"
+      content="Halaman kenangan setelah jawaban proposal romantis."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="memory-page">
+    <div class="ambient" aria-hidden="true"></div>
+    <canvas id="petals" aria-hidden="true"></canvas>
+
+    <header class="site-header memory-header">
+      <a class="brand" href="index.html" aria-label="Kembali ke halaman proposal">
+        <span class="brand-mark">L</span>
+        <span>Our Memories</span>
+      </a>
+      <nav aria-label="Navigasi kenangan">
+        <a href="index.html">Proposal</a>
+        <a href="#gallery">Foto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="memory-hero reveal">
+        <p class="eyebrow">You said yes</p>
+        <h1>Ini awal kita.</h1>
+        <p>
+          Setelah satu jawaban kecil yang mengubah segalanya, halaman ini
+          menyimpan potongan momen yang membuat kita sampai di sini.
+        </p>
+      </section>
+
+      <section class="memory-gallery" id="gallery" aria-label="Galeri kenangan pasangan">
+        <article class="memory-card large reveal">
+          <img src="assets/memory-rain.png" alt="Pasangan berjalan berdekatan di bawah payung saat hujan.">
+          <div class="memory-caption">
+            <span>01</span>
+            <h2>Di hari yang basah, kamu tetap terasa seperti hangat.</h2>
+          </div>
+        </article>
+
+        <div class="memory-stack">
+          <article class="memory-card reveal">
+            <img src="assets/memory-home.png" alt="Pasangan menyiapkan sarapan bersama di rumah.">
+            <div class="memory-caption">
+              <span>02</span>
+              <h3>Rumah selalu punya aroma yang sama: kita.</h3>
+            </div>
+          </article>
+
+          <article class="memory-card reveal">
+            <img src="assets/memory-beach.png" alt="Pasangan duduk bersama melihat matahari terbenam di pantai.">
+            <div class="memory-caption">
+              <span>03</span>
+              <h3>Aku ingin menua di sebelahmu, pelan-pelan.</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="memory-note reveal">
+        <p>
+          Foto-foto ini bisa kamu ganti dengan foto asli kalian nanti. Simpan
+          saja file baru di folder `assets` dengan nama yang sama.
+        </p>
+        <a class="button primary" href="index.html#question">Kembali ke proposal</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Forever starts quietly, then becomes everything.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
